@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Typing-Detector",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.npmjs.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "https://skimdb.npmjs.com/"
+  ],
+  "background": {
+    "scripts": ["background-script.js"],
+    "persistent": false
+  }
+}
